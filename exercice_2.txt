@@ -1,0 +1,18 @@
+Stocker un prénom : 
+
+1. Créer variable prénom
+2. Demander prénom
+3. prénom <-- prénom entré
+
+Stocker un âge : 
+
+1. Créer variable âge
+2. Demander âge
+3. âge <-- âge entré
+
+Stocker un statut de connexion et afficher un message avec toutes les informations : 
+
+1. Créer variable statut de connexion
+2. Demander le statut de connexion
+3. statut de connexion <-- statut entré
+4. Afficher prénom âge "statut de connexion"

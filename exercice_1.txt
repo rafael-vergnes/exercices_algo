@@ -1,0 +1,19 @@
+Stocker l’année de naissance : 
+
+1. Créer variable année de naissance
+2. Demander l'année de naissance
+3. année de naissance <-- année entrée
+
+Stocker l’année actuelle : 
+
+1. Créer variable année actuelle
+2. Demander l'année actuelle
+3. année actuelle <-- année entrée
+
+Calculer l’âge et Afficher le résultat : 
+
+1. Créer variable calcul âge
+2. Valeur variable année actuelle - valeur variable année de naissance
+3. calcul âge <-- résultat entrée
+4. Afficher calcul âge
+

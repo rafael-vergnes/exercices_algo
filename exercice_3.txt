@@ -1,0 +1,16 @@
+Créer deux variables avec des valeurs différentes : 
+
+1. Créer variable a
+2. Demander a
+3. a <-- 1
+
+1. Créer variable b
+2. Demander b
+3. b <-- 0
+
+Échanger leurs valeurs sans les perdre : 
+
+1. Créer variable échange
+2. Demander échange
+3. échange <-- "variable a" "variable b"
+4. Initier l'algorithme
