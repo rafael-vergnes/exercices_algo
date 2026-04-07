@@ -1,0 +1,22 @@
+Créer variable age
+Demander age
+age < age entré
+Créer variable majeur
+majeur <-- age >= 18 true, age < 18 false
+si true afficher "bravo tu es majeur", sinon afficher "haha mineur" 
+
+Créer variable password
+Demander le mot de passe
+password < mot de passe >= à 12 caractères true, mot de passe < à 12 caractères false
+si true afficher "succès" sinon afficher "erreur"
+
+Créer variable note
+Demander note
+note <-- note >= 10 true, note < 10 false
+si true afficher "Admis !" sinon afficher "Refusé" & si note >= 16 afficher "Très bien" si note >= 14 afficher "bien" si note >= 10 afficher "Passable"
+
+Créer variable couleur
+couleur <-- vert = avancer, orange = ralentir, rouge = stop
+si vert afficher "avancer", si orange afficher "ralentir", si rouge afficher "stop"
+
+
