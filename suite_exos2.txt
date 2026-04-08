@@ -1,0 +1,26 @@
+i= 1 à 20 
+SI i/2= 0
+     AFFICHER i
+
+i= 10 à 0
+TANT QUE i <= 10
+     AFFICHER i
+
+e = 1 à 3 
+TANT QUE mot de passe éronné
+     AFFICHER "Erreur" + e
+SI mot de passe correct
+     AFFICHER "Correct"
+SINON SI e=3 ALORS stop
+     AFFICHER "nombre d'essais maximum atteint"
+
+variable tables
+demander tables de 1 à 10
+tables <- tables entrées
+variable nombre
+demander un nombre de 1 à 10
+nombre <- nombre entré
+SI tables === nombre
+     AFFICHER tables
+
+
