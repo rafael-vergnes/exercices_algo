@@ -1,0 +1,24 @@
+tableau <- ["Rafaël", 6, true]
+POUR i de 0 à Taille de tableau -1
+     AFFICHER index i
+FIN POUR
+
+tableau <- [1, 2, 3]
+somme <- index [1] + index [2] + index [3]
+moyenne <- somme / 2
+     AFFICHER moyenne
+
+tableau <- [4, 6, 2]
+POUR i de 0 à taille de tableau -1
+     p = 0
+     n = 1
+     SI index i + p > index i + n
+ARRETER POUR
+     p = -1 
+     n = n + 1
+     SINON p = p + 1
+           n = n + 1
+     FIN SI
+FIN POUR
+       
+
