@@ -1,0 +1,64 @@
+EXERCICE 1 
+
+Il manque le égal au supérieur ou égal à 18
+
+age <- 16
+
+SI age >= 18
+     AFFICHER "Majeur"
+SINON
+     AFFICHER "Mineur"
+FIN SI
+
+
+
+EXERCICE 2
+
+Cela ne fera pas une moyenne car la boucle POUR est une boucle infinie, la variable somme ne contiendra que la valeur 10 qui sera
+ensuite divisé par 3 par la variable moyenne, ce qui donnera 3,33333. Il ne pourra pas additionner les 2 autres valeurs que sont 
+12 et 14.
+
+notes <- [10, 12 ,14]
+somme <- 0
+
+POUR i de 0 à taille de notes -1
+     somme <- index [i]
+FIN POUR
+
+moyenne <- somme / 3
+AFFICHR moyenne
+
+
+
+EXERCICE 3
+
+Il manque l'affichage du cas où la valeur est inférieure à 10
+
+note <- 8
+
+SI note >= 10
+     AFFICHER "Admis"
+SINON SI note < 10 
+     AFFICHER "Refusé"
+FIN SI
+
+
+
+EXERCICE 4
+
+notes <- []
+somme <- 0
+
+POUR chaque note dans notes
+   somme <- somme + note
+   SI note != NUMBER
+     AFFICHER "uniquement entier numérique"
+   SINON SI somme = nulle
+     AFFICHER "uniquement entier numérique"
+   SINON SI somme = erreur
+     AFFICHER "uniquement entier numérique"
+   FIN SI
+FIN POUR
+
+moyenne <- somme / nombre d'éléments de notes
+AFFICHER moyenne
