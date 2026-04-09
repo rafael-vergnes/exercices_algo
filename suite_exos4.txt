@@ -1,0 +1,53 @@
+FONCTION calculerTVA(prixHT, tauxTVA)
+     RETOURNER prixHT x tauxTVA/100 
+FIN
+
+
+
+
+créer variable priceHT
+demander montant 
+priceHT <- montant saisie
+créer variable TVA
+demander montant
+TVA <- montant saisie
+
+resultatTTC <- calculerTVA(priceHT, TVA) + priceHT
+     AFFICHER resultatTTC + "€ TCC" + "(" priceHT + "€ HT" calculerTVA(priceHT, TVA) + "%"
+
+
+
+
+
+
+FONCTION calculerMoyenne(note1, note2, note3)
+     RETOURNER (note1 + note2 + note3)/3
+FIN
+
+
+
+FONCTION attributionMention(moyenne)
+   SI moyenne >=16
+     RETOURNER "Très bien"
+   SINON SI moyenne >=14
+     RETOURNER "Bien"
+   SINON SI moyenne >=12
+     RETOURNER "Assez bien"
+   SINON SI moyenne >=10
+     RETOURNER "Passable"
+   SINON SI moyenne <10 
+     RETOURNER "Insuffisant"
+   FIN SI
+FIN
+
+
+
+demander n1
+n1 <- valeur entrée
+demander n2
+n2 <- valeur entrée
+demander n3
+n3 <- valeur entrée
+
+     AFFICHER calculerMoyenne(n1, n2, n3) + attributionMoyenne(calculerMoyenne) 
+
