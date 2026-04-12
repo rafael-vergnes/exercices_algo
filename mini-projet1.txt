@@ -1,0 +1,22 @@
+aléatoire <- génère un nombre aléatoirement en 1 et 100 
+
+compteur <- 1
+deviner <- nombre entré
+
+TANT QUE compteur < 6 
+     AFFICHER compteur
+   SI deviner != number OU deviner == nulle OU deviner > 2
+     AFFICHER "Entrez un seul nombre entier"
+FIN TANT QUE
+   SINON SI deviner === aléatoire
+     AFFICHER "Bravo, le nombre était bien" + aléatoire
+FIN TANT QUE
+   SINON SI deviner > aléatoire
+     AFFICHER "C'est plus petit que" + deviner
+   SINON SI deviner < aléatoire
+     AFFICHER "C'est plus grand que" + deviner
+   FIN SI
+compteur <- compteur + 1
+FIN TANT QUE
+
+

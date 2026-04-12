@@ -1,0 +1,20 @@
+TableauProduits <- [« Tondeuse », « Peigne », « Rasoir »]
+TableauPrix <- [49.90, 4.90, 15]
+
+compteur <- 0
+   SI Taille de TableauProduits > 1 ET Taille de TableauPrix > 1
+POUR i de 0 à Taille de TableauProduits -1 ET j de 0 à TaillePrix -1
+     AFFICHER index [i] + index [j] + « € »
+compteur <- compteur + index [j]
+FIN POUR
+    SINON AFFICHER « Panier vide »
+    REDIRECTION impossible
+   FIN SI
+   SI compteur >= 60
+     AFFICHER « Total avec remise -10% : » + compteur x 0,9 + « € »
+   SINON AFFICHER « Total : » compteur + « € »
+   FIN SI
+   SI compteur > 0
+      AFFICHER « Valider »
+      REDIRECTION vers URL
+FIN SI

@@ -1,0 +1,11 @@
+identifiant <- identifiant entré
+mot de passe <- mot de passe entré
+
+POUR compteur de 1 à 3
+     AFFICHER « Tentative : » + compteur
+   SI identifiant et mot de passe attendus
+     AFFICHER « Connexion autorisée »
+FIN POUR
+   SINON AFFICHER « Identifiant et/ou mot de passe incorrects »
+   FIN SI
+FIN POUR
