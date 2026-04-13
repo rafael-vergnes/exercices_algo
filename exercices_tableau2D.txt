@@ -1,0 +1,74 @@
+EXERCICE 1
+
+morpion <- [
+   [" ", " ", " "]
+   [" ", " ", " "]
+   [" ", " ", " "]
+  ]
+
+morpion [1][1] <- X
+morpion [2][2] <- O
+morpion [0][2] <- X
+morpion [2][0] <- O
+
+POUR i de 0 à taille de morpion -1
+   POUR j de 0 à taille de morpion[i] -1
+     AFFICHER morpion[i][j]
+   FIN POUR
+FIN POUR
+
+
+
+
+EXERCICE 2
+
+TabClasses <- [
+   [18, 12.5, 14, 8.5, 10]
+   [15.5, 11, 13.5, 16, 9.5]
+   [7, 10.5, 14, 17, 12]
+   ]
+
+compteur <- 0
+FONCTION moyenne <- (tableau)
+   POUR i de 0 à taille de tableau
+   compteur = compteur + index [i]
+   FIN POUR
+compteur = compteur / 5 
+
+MoyenneClasse1 <- moyenne (TabClasses)
+     AFFICHER compteur
+
+
+compteur <- 0
+FONCTION MoyenneGenerale <- (tableau)
+   POUR i de 0 à taille de tableau
+     POUR j de 0 à taille de tableau [i] -1
+   compteur = compteur + index [i] + index [j]
+     FIN POUR
+   FIN POUR
+compteur = compteur / 15
+
+MoyenneToutesClasses <- MoyenneGenerale (TabClasses)
+     AFFICHER compteur
+
+
+
+EXERCICE 3
+
+nombres <- [
+   [18, 75, 23, 11]
+   [38, 99, 56, 73]
+   [61, 44, 39, 28]
+   [83, 58, 92, 31]
+  ]
+
+specifique <- nombre entré
+POUR i de 0 à taille de nombres -1
+   POUR j de 0 à taille de nombres [i] -1
+     SI index [i][j] === specifique
+       AFFICHER index[i] + index[j] de index[i][j] trouvé
+     SINON AFFICHER "nombre non trouvé"
+     FIN SI
+   FIN POUR
+FIN POUR
+
