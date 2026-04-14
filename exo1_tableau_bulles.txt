@@ -10,29 +10,21 @@ POUR i de 0 à taille de tableau -2
    FIN POUR
 FIN POUR
 
-1ère boucle de i
-[5, 1, 4, 2, 8] 1ère boucle de j
-comparer 5 et 1 -> échanger
-[1, 5, 4, 2, 8] 2ème boucle de j
-comparer 5 et 4 -> échanger
-[1, 4, 5, 2, 8] 3ème boucle de j
-comparer 5 et 2 -> échanger
-[1, 4, 2, 5, 8] 4ème boucle de j
-comparer 5 et 8 -> OK
-i = 0
 
-2ème boucle de i
-[1, 4, 2, 5, 8] 1ère boucle de j
-comparer 1 et 4 -> OK
-[1, 4, 2, 5, 8] 2ème boucle de j
-comparer 4 et 2 -> échanger
-[1, 2, 4, 5, 8] 3ème boucle de j
-comparer 4 et 5 -> OK
-i = 1
 
-3ème boucle de i
-[1, 2, 4, 5, 8] 1ère boucle de j
-comparer 1 et 2 -> OK
-[1, 2, 4, 5, 8] 2ème boucle de j
-comparer 2 et 4 -> OK
-i = 2 
+tableau [5, 1, 4, 2, 8]
+
+1ère boucle de i (i = 0)
+comparer 5 et 1 -> échanger [1, 5, 4, 2, 8] 1ère boucle de j (j = 0)
+comparer 5 et 4 -> échanger [1, 4, 5, 2, 8] 2ème boucle de j (j = 1)
+comparer 5 et 2 -> échanger [1, 4, 2, 5, 8] 3ème boucle de j (j = 2)
+comparer 5 et 8 -> OK [1, 4, 2, 5, 8] 4ème boucle de j (j = 3)
+
+2ème boucle de i (i = 1)
+comparer 1 et 4 -> OK [1, 4, 2, 5, 8] 1ère boucle de j (j = 0)
+comparer 4 et 2 -> échanger [1, 2, 4, 5, 8] 2ème boucle de j (j = 1)
+comparer 4 et 5 -> OK [1, 2, 4, 5, 8] 3ème boucle de j (j = 2)
+
+3ème boucle de i (i = 2)
+comparer 1 et 2 -> OK [1, 2, 4, 5, 8] 1ère boucle de j (j = 0)
+comparer 2 et 4 -> OK [1, 2, 4, 5, 8] 2ème boucle de j (j = 1)
