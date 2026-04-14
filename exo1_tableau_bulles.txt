@@ -28,3 +28,4 @@ comparer 4 et 5 -> OK [1, 2, 4, 5, 8] 3ème boucle de j (j = 2)
 3ème boucle de i (i = 2)
 comparer 1 et 2 -> OK [1, 2, 4, 5, 8] 1ère boucle de j (j = 0)
 comparer 2 et 4 -> OK [1, 2, 4, 5, 8] 2ème boucle de j (j = 1)
+
