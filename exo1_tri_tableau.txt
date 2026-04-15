@@ -1,0 +1,31 @@
+tableau [5, 1, 4, 2, 8]
+
+POUR i de 0 à taille de tableau -2
+   POUR j de 0 à taille de tableau -2 -i
+     SI tableau[j] > tableau[j+1]
+     temporaire <- tableau[j]
+     tableau[j] <- tableau[j+1]
+     tableau[j+1] <- temporaire
+     FIN SI
+   FIN POUR
+FIN POUR
+
+
+
+tableau [5, 1, 4, 2, 8]
+
+1ère boucle de i (i = 0)
+comparer 5 et 1 -> échanger [1, 5, 4, 2, 8] 1ère boucle de j (j = 0)
+comparer 5 et 4 -> échanger [1, 4, 5, 2, 8] 2ème boucle de j (j = 1)
+comparer 5 et 2 -> échanger [1, 4, 2, 5, 8] 3ème boucle de j (j = 2)
+comparer 5 et 8 -> OK [1, 4, 2, 5, 8] 4ème boucle de j (j = 3)
+
+2ème boucle de i (i = 1)
+comparer 1 et 4 -> OK [1, 4, 2, 5, 8] 1ère boucle de j (j = 0)
+comparer 4 et 2 -> échanger [1, 2, 4, 5, 8] 2ème boucle de j (j = 1)
+comparer 4 et 5 -> OK [1, 2, 4, 5, 8] 3ème boucle de j (j = 2)
+
+3ème boucle de i (i = 2)
+comparer 1 et 2 -> OK [1, 2, 4, 5, 8] 1ère boucle de j (j = 0)
+comparer 2 et 4 -> OK [1, 2, 4, 5, 8] 2ème boucle de j (j = 1)
+

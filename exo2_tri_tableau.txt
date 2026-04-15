@@ -1,0 +1,75 @@
+tableau [29, 10, 14, 37, 13, 25]
+n <- taille de tableau
+
+POUR i de 0 à n-2
+  index <- i
+   POUR j de i+1 à n-1
+     SI tableau[index] > tableau[j]
+       index <- j
+   FIN POUR
+     SI tableau[index] != index[j]
+       temporaire <- index[j]
+       index[j] <- tableau[index]
+       tableau[index] <- temporaire
+     FIN SI
+FIN POUR
+
+
+
+tableau [29, 10, 14, 37, 13, 25]
+
+Tour 1 (i=0) :
+ 
+Tour 1 (j=0) : index minimum = 0, valeur de index 0 > valeur de index 1, donc index minimum = index 1
+Tour 2 (j=1) : index minimum = 1, valeur de index 1 < valeur de index 2, donc index minimum = index 1
+Tour 3 (j=2) : index minimum = 1, valeur de index 1 < valeur de index 3, donc index minimum = index 1
+Tour 4 (j=3) : index minimum = 1, valeur de index 1 < valeur de index 4, donc index minimum = index 1
+Tour 5 (j=4) : index minimum = 1, valeur de index 1 < valeur de index 5, donc index minimum = index 1
+
+Échange valeur index 0 et index 1 donc échange de 29 et 10 donc tableau [10, 29, 14, 37, 13, 25]
+
+
+
+tableau [10, 29, 14, 37, 13, 25]
+
+Tour 2 (i=1) :
+ 
+Tour 1 (j=0) : index minimum = 1, valeur de index 1 > valeur de index 2, donc index minimum = index 2
+Tour 2 (j=1) : index minimum = 2, valeur de index 2 < valeur de index 3, donc index minimum = index 2
+Tour 3 (j=2) : index minimum = 2, valeur de index 2 > valeur de index 4, donc index minimum = index 4
+Tour 4 (j=3) : index minimum = 4, valeur de index 4 < valeur de index 5, donc index minimum = index 4
+
+Échange valeur index 1 et index 4 donc échange de 29 et 13 donc tableau [10, 13, 14, 37, 29, 25]
+
+
+
+tableau [10, 13, 14, 37, 29, 25]
+
+Tour 3 (i=2) :
+ 
+Tour 1 (j=0) : index minimum = 2, valeur de index 2 < valeur de index 3, donc index minimum = index 2
+Tour 2 (j=1) : index minimum = 2, valeur de index 2 < valeur de index 4, donc index minimum = index 2
+Tour 3 (j=2) : index minimum = 2, valeur de index 2 < valeur de index 5, donc index minimum = index 2
+
+Aucun échange donc tableau [10, 13, 14, 37, 29, 25]
+
+
+
+tableau [10, 13, 14, 37, 29, 25]
+
+Tour 4 (i=3) :
+ 
+Tour 1 (j=0) : index minimum = 3, valeur de index 3 > valeur de index 4, donc index minimum = index 4
+Tour 2 (j=1) : index minimum = 4, valeur de index 4 > valeur de index 5, donc index minimum = index 5
+
+Échange valeur index 3 et index 5 donc échange de 37 et 25 donc tableau [10, 13, 14, 25, 29, 37]
+
+
+
+tableau [10, 13, 14, 25, 29, 37]
+
+Tour 5 (i=4) :
+ 
+Tour 1 (j=0) : index minimum = 4, valeur de index 4 < valeur de index 5, donc index minimum = index 4
+
+Aucun échange donc tableau [10, 13, 14, 25, 29, 37]

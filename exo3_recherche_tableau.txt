@@ -1,0 +1,22 @@
+tableau [2, 5, 8, 12, 16, 23, 38, 45, 56, 67, 78]
+
+FONCTION rechercheDichoto(tableau, recherche)
+
+indexMin = 0
+indexMax = taille tableau -1
+
+TANT QUE indexMin <= indexMax
+   milieu <- (indexMin + indexMax) / 2   // (0 + 10)/2 = 5
+   SI tableau[milieu] = recherche   // 23 = 23
+     RETOURNER "Trouvé à index" + i   // Trouvé à index 5
+   SINON SI tableau[milieu] > recherche
+     indexMax = milieu -1
+   SINON SI tableau[milieu] < recherche
+     indexMin = milieu +1
+   SINON RETOURNER "Non trouvé"
+   FIN SI
+FIN TANT QUE 
+FIN FONCTION
+
+
+

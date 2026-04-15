@@ -1,0 +1,14 @@
+FONCTION rechercheSequentielle(tableau, element)
+   POUR i de 0 à longueur(tableau) – 1
+     SI tableau[i] = element
+      RETOURNER i 
+     FIN SI
+   FIN POUR
+  RETOURNER -1
+FIN FONCTION
+
+
+tableauPrenom [julien, sophie, manon, lauriane, lucas]
+
+RechercherPrenom <- rechercheSequentielle(tableauPrenom, lauriane)
+   AFFICHER RecherchePrenom   // 3

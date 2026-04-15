@@ -1,0 +1,49 @@
+FONCTION triParSelection(tab)
+n = taille de tableau 
+
+POUR i de 0 à n-2
+  indexMin <- i
+   POUR j de i+1 à n-1
+     SI tableau[indexMin] > tableau[j]
+       indexMin <- j
+     FIN SI
+   FIN POUR
+     SI indexMin != i
+       temporaire <- tableau[j]
+       tableau[j] <- tableau[indexMin]
+       tableau[indexMin] <- temporaire
+     FIN SI
+FIN POUR
+FIN FONCTION
+
+
+tableau [45, 12, 89, 23, 67, 34, 5, 78]
+
+TrierTabCroissant <- triParSelection(tableau)
+   AFFICHER TrierTabCroissant   // [5, 12, 23, 34, 45, 67, 78, 89]
+
+
+FONCTION rechercheDichoto(tableau, recherche)
+
+indexMin = 0
+indexMax = taille tableau -1
+
+TANT QUE indexMin <= indexMax
+   milieu <- arrondi supérieur (indexMin + indexMax) / 2
+   SI tableau[milieu] = recherche
+     RETOURNER "Trouvé à index" + i
+   SINON SI tableau[milieu] > recherche
+     indexMax = milieu -1
+   SINON SI tableau[milieu] < recherche
+     indexMin = milieu +1
+   SINON RETOURNER "Non trouvé"
+   FIN SI
+FIN TANT QUE 
+FIN FONCTION
+
+
+
+Tant que 0 <= 7
+   milieu <- (0 + 7)/2 = 3.5 donc 4 arrondi supérieur
+   tableau[index] = 67 = recherche
+   Trouvé à index 5
