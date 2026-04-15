@@ -6,7 +6,7 @@ indexMin = 0
 indexMax = taille tableau -1
 
 TANT QUE indexMin <= indexMax
-   milieu <- (indexMin + indexMax) / 2   // (0 + 10)/2 = 5
+   milieu <- arrondi supérieur (indexMin + indexMax) / 2   // (0 + 10)/2 = 5
    SI tableau[milieu] = recherche   // 23 = 23
      RETOURNER "Trouvé à index" + i   // Trouvé à index 5
    SINON SI tableau[milieu] > recherche
@@ -18,5 +18,33 @@ TANT QUE indexMin <= indexMax
 FIN TANT QUE 
 FIN FONCTION
 
+
+Pour recherche de 5
+
+Boucle 1
+indexMin = 0 (2)
+indexMax = 10 (78)
+milieu = 5 (23)
+
+5 < 23 donc : 
+indexMin = 0 (2)
+indexMax = 4 (16)
+
+Boucle 2 
+indexMin = 0 (2)
+indexMax = 4 (16)
+milieu = 2 (8)
+
+5 < 8 donc : 
+indexMin = 0 (2)
+indexMax = 1 (5)
+
+Boucle 3 
+indexMin = 0 (2)
+indexMax = 1 (5)
+milieu = 1 (5) arrondi supérieur
+
+5 = 5 
+Trouvé à index 1
 
 
