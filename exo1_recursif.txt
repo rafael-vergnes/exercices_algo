@@ -1,0 +1,38 @@
+6 + 4 = 10
+3 + 3 = 6
+1 + 2 = 3
+0 + 1 = 1
+0 + 0 = 0
+
+
+4 + 6 = 10
+3 + 3 = 6
+2 + 1 = 3
+1 + 0 = 1
+0 + 0 = 0
+
+
+
+FONCTION RECURSIVE somme(n)
+   SI n = 0
+     RETOURNER 0
+   SINON
+     RETOURNER n + somme(n-1)
+   FIN SI
+FIN FONCTION
+
+
+nombre <- 4
+resultat <- somme(nombre)
+   AFFICHER resultat
+
+
+
+somme(4) -> 4 + somme(3) [6] -> retourne 10
+ somme(3) -> 3 + somme(2) [3] -> retourne 6
+  somme(2) -> 2 + somme(1) [1] -> retourne 3
+   somme(1) -> 1 + somme(0) [0] -> retourne 1
+    somme(0) → retourne 0
+
+
+

@@ -1,0 +1,25 @@
+2 x 4 = 2 x 2 expo (4-1) = 2 x 2 expo 3
+
+
+FONCTION RECURSIVE puissance(X, n)
+   SI n = 0
+     RETOURNER 0
+   SINON
+     RETOURNER X x puissance(X^(n-1))
+   FIN SI
+FIN FONCTION
+
+
+nombreX <- 2
+nombreN <- 4
+resultat <- puissance(nombreX, nombreN)
+   AFFICHER resultat
+
+
+
+somme(2, 4) -> 2 x puissance(2^(3)) [8] -> retourne 16
+ somme(2, 3) -> 2 x puissance(2^(2)) [4] -> retourne 8
+  somme(2, 2) -> 2 x puissance(2^(1)) [2] -> retourne 4
+   somme(2, 1) -> 2 x puissance(2^(0)) [1] -> retourne 2
+    somme(2, 0) -> retourne 0
+    
